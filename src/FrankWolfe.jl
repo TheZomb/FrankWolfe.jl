@@ -19,7 +19,7 @@ import Hungarian
 
 import Arpack
 
-export frank_wolfe, lazified_conditional_gradient, away_frank_wolfe
+export frank_wolfe, lazified_conditional_gradient, away_frank_wolfe, anderson_frank_wolfe
 export blended_conditional_gradient, compute_extreme_point
 
 include("abstract_oracles.jl")
@@ -36,6 +36,7 @@ include("active_set.jl")
 include("active_set_quadratic.jl")
 include("active_set_quadratic_direct_solve.jl")
 include("active_set_sparsifier.jl")
+include("anderson_acceleration.jl")
 
 include("blended_cg.jl")
 include("afw.jl")
